@@ -1,0 +1,43 @@
+.margen-pagina{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.numero-telefono{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+.seccion-contacto{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer{
+    padding-top: 15px;
+    padding-bottom: 20px;
+    background-color: #696969;
+}
+.footer a{
+    /*text-decoration: none;*/
+    color: white;
+    font-size: 18px;
+}
+.footer p{
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .numero-telefono{
+        font-size: 25px;
+    }
+    .margen-pagina{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+@media (max-width: 480px){
+    .numero-telefono{
+        font-size: 20px;
+    }
+    .footer a{
+        font-size: 16px;
+    }
+}
