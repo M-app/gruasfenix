@@ -24,13 +24,19 @@
     color: white;
 }
 
+@media (max-width: 991px) {
+    .margen-pagina{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .container{
+        width: 100%;
+    }
+}
+
 @media (max-width: 767px) {
     .numero-telefono{
         font-size: 25px;
-    }
-    .margen-pagina{
-        margin-left: 40px;
-        margin-right: 40px;
     }
 }
 @media (max-width: 480px){

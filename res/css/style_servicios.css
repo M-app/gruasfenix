@@ -1,0 +1,17 @@
+.barra{
+    background-color: #F1FA72;
+    height: 15px;
+    width: 100%;
+}
+#servicios p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+#servicios h2{
+    font-weight: 500;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+}

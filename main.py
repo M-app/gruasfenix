@@ -25,14 +25,14 @@ JINJA_ENVIRONMENT = jinja2.Environment(
 class MainPage(webapp2.RequestHandler):
     def get(self):
         #self.response.headers['Content-Type'] = 'text/plain'
-        template = JINJA_ENVIRONMENT.get_template('/templates/index.html')
-        self.response.write(template.render())
+        #template = JINJA_ENVIRONMENT.get_template('/templates/index.html')
+        #self.response.write(template.render())
+        self.response.write("Prueba debian!")
 
 class Rescates(webapp2.RequestHandler):
     def get(self):
-        template = JINJA_ENVIRONMENT.get_template("/templates/base.html")
+        template = JINJA_ENVIRONMENT.get_template("/templates/servicios.html")
         self.response.write(template.render())
-
 
 app = webapp2.WSGIApplication([
     ('/', MainPage),

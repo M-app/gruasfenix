@@ -1,9 +1,11 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <link type="text/css" rel="stylesheet" href="../res/css/bootstrap.min.css"> 
         <link type="text/css" rel="stylesheet" href="../res/css/style.css">
+        {% block head %}{% endblock %}
         <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
     </head>
     <body>
@@ -22,6 +24,7 @@
             </div>
         </section>
         <!-- Fin sección de contacto -->
+        <section>{% block content %}{% endblock %}</section>
         <!--Footer -->
         <section>
             <div class="footer">
