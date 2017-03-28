@@ -6,6 +6,9 @@ handlers:
 - url: /res
   static_dir: res
 
+- url: /principalpage
+  static_dir: principalpage
+
 - url: /.*
   script: main.app
 

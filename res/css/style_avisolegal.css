@@ -1,0 +1,16 @@
+.barra{
+    background-color: #F1FA72;
+    height: 12px;
+    width: 100%;
+}
+#aviso{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+#titulo-aviso{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+#section-aviso{
+    padding-bottom: 20px;
+}

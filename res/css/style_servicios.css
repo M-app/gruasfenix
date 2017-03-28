@@ -1,6 +1,6 @@
 .barra{
     background-color: #F1FA72;
-    height: 15px;
+    height: 12px;
     width: 100%;
 }
 #servicios p{
@@ -12,6 +12,46 @@
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
 }
+#servicios ul h2{
+    font-size: 20px;
+}
 h1{
     font-family: 'Montserrat', sans-serif;
+}
+#seccion-imagen{
+    background-color: lightgrey;
+    padding: 0px;
+    margin-top: 20px;
+}
+#seccion-imagen h3{
+    background-color: #ff0000;
+    color: white;
+    padding: 20px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+#seccion-imagen img{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#seccion-imagen p{
+    color: black;
+    margin: 12px;
+}
+#btn-llamar{
+    background-color: gold; /* Green */
+    border: none;
+    color: black;
+    border-radius: 2px;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    display: block
+}
+#seccion-contenido{
+    padding-bottom: 20px;
 }

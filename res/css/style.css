@@ -10,18 +10,29 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.seccion-contacto div div{
+    margin-bottom: 12px;
+}
 .footer{
     padding-top: 15px;
     padding-bottom: 20px;
     background-color: #696969;
 }
 .footer a{
-    /*text-decoration: none;*/
     color: white;
     font-size: 18px;
 }
+.footer a img{
+    margin-right: 8px;
+}
 .footer p{
     color: white;
+}
+.footer ul{
+    list-style-type: none;
+}
+.footer ul li{
+    margin-bottom: 4px;
 }
 
 @media (max-width: 991px) {
