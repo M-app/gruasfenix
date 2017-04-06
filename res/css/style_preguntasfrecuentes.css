@@ -1,0 +1,15 @@
+.barra{
+    background-color: #F1FA72;
+    height: 12px;
+    width: 100%;
+}
+.contenido h2{
+    font-weight: 500;    
+}
+.contenido p{
+    font-size: 16px;
+}
+.contenido{
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 20px;
+}

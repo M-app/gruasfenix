@@ -28,7 +28,7 @@ class MainPage(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template('/templates/index.html')
         self.response.write(template.render())
 
-class Rescates(webapp2.RequestHandler):
+class TodaLaCapital(webapp2.RequestHandler):
     def get(self):
         template = JINJA_ENVIRONMENT.get_template("/templates/servicios.html")
         self.response.write(template.render())
@@ -38,8 +38,57 @@ class AvisoLegal(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template("templates/avisolegal.html")
         self.response.write(template.render())
 
+class PreguntasFrecuentes(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template("templates/preguntasfrecuentes.html")
+        self.response.write(template.render())
+
+class VillaNueva(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template("templates/villanueva.html")
+        self.response.write(template.render())    
+
+class TodasLasZonas(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template("templates/todaslaszonas.html")
+        self.response.write(template.render())
+
+class ServicioDeGruas(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template("templates/serviciodegruas.html")
+        self.response.write(template.render())
+
+class Emergencias(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template("templates/emergencias.html")
+        self.response.write(template.render())
+
+class Experiencia(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template("templates/experiencia.html")
+        self.response.write(template.render())
+
+class Remolcadoras(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template("templates/remolcadoras.html")
+        self.response.write(template.render())
+
+class Automotores(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template("templates/automotores.html")
+        self.response.write(template.render())
+
+
 app = webapp2.WSGIApplication([
     ('/', MainPage),
-    ('/servicios',Rescates),
-    ('/avisolegal',AvisoLegal)
-], debug=True)
+    ('/todalacapital',TodaLaCapital),
+    ('/avisolegal',AvisoLegal),
+    ('/preguntasfrecuentes',PreguntasFrecuentes),
+    ('/villanueva',VillaNueva),
+    ('/todaslaszonas',TodasLasZonas),
+    ('/serviciodegruas',ServicioDeGruas),
+    ('/gruasemergencia',Emergencias),
+    ('/gruasexperiencia',Experiencia),
+    ('/gruasremolcadoras',Remolcadoras),
+    ('/gruasautomotores',Automotores)
+], debug=False)
