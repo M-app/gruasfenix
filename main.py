@@ -78,6 +78,16 @@ class Automotores(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template("templates/automotores.html")
         self.response.write(template.render())
 
+class Mixco(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template("templates/mixco.html")
+        self.response.write(template.render())
+
+class SanLucas(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template("templates/sanlucas.html")
+        self.response.write(template.render())
+
 
 app = webapp2.WSGIApplication([
     ('/', MainPage),
@@ -90,5 +100,7 @@ app = webapp2.WSGIApplication([
     ('/gruasemergencia',Emergencias),
     ('/gruasexperiencia',Experiencia),
     ('/gruasremolcadoras',Remolcadoras),
-    ('/gruasautomotores',Automotores)
+    ('/gruasautomotores',Automotores),
+    ('/mixco',Mixco),
+    ('/sanlucas',SanLucas)
 ], debug=False)
